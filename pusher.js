@@ -1,6 +1,8 @@
 /**
  * WebSocket·þÎñÆ÷³ÌÐò
- * Surpport [RFC 6455] only
+ * Surport [RFC 6455] only.
+ * Just wanna a pure WebSocket Server running in Nodejs.
+ * No client code jam, no Hixie or IETF, no flash etc., just for push messages to clients!
  */
 var util = require("util"), 
 	net = require("net"), 

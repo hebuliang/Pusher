@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+	(function() {
+		var ws = new WebSocket('ws://localhost:8888');
+		
+		ws.onopen = function(e) {
+			// (Hello)48 65 6c 6c 6f
+			ws.send('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+		}
+		ws.onmessage = function(e) {
+			console.log(e.data);
+		};
+
+		ws.onclose = function() {
+			// TODO
+		};
+	})();
+</script>
+</body>
+</html>
